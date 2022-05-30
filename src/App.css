@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Hina+Mincho&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 2rem;
+  justify-content: center;
+  background-color: rgb(70, 46, 90);
+}
+.accordion {
+  background-color: #fff;
+  width: 70vw;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.accordion h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 12px brown;
+}
+.accordion-info {
+  width: 70%;
+}
+.questionTitle {
+  border: 1px solid rgba(116, 109, 109, 0.733);
+  border-radius: 3px;
+  padding: 1.3rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  box-shadow: 1px 1px 5px rgb(126, 104, 104);
+  font-family: "Hina Mincho", serif;
+  word-spacing: 2px;
+}
+.questionTitle header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.questionTitle:last-child {
+  margin-bottom: 2rem;
+}
+
+.questionTitle p {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.questionButton {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  color: tomato;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .accordion {
+    width: 97vw;
+    padding: 1rem 0.4rem;
+  }
+  .accordion h1 {
+    font-size: 1.6rem;
+  }
+  .accordion-info {
+    width: 96%;
+  }
+  .questionTitle {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.4rem;
+  }
+  .questionTitle:last-child {
+    margin-bottom: 1rem;
+  }
+  .questionTitle p {
+    font-size: 1rem;
+  }
+  .questionButton {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  .accordion {
+    width: 85vw;
+    padding: 1.1rem 0.6rem;
+  }
+  .accordion h1 {
+    font-size: 1.8rem;
+  }
+  .accordion-info {
+    width: 94%;
+  }
+  .questionTitle {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.4rem;
+  }
+  .questionTitle:last-child {
+    margin-bottom: 1.2rem;
+  }
+  .questionTitle p {
+    font-size: 1rem;
+  }
+  .questionButton {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1120px) and (min-width: 768px) {
+  .accordion {
+    width: 85vw;
+    padding: 1.4rem 0.6rem;
+  }
+
+  .accordion-info {
+    width: 92%;
+  }
+  .questionTitle {
+    padding: 0.8rem 0.4rem;
+  }
+  .questionTitle:last-child {
+    margin-bottom: 1.2rem;
+  }
+  .questionTitle p {
+    font-size: 1.1rem;
+  }
+  .questionButton {
+    font-size: 1.6rem;
+  }
+}
